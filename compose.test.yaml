@@ -1,0 +1,10 @@
+services:
+  postgres:
+    container_name: roll_app_test
+    image: 'postgres:latest'
+    environment:
+      - 'POSTGRES_DB=roll_app_test'
+      - 'POSTGRES_USER=mohammed'
+      - 'POSTGRES_PASSWORD=superman'
+    ports:
+      - '5433:5432'
